@@ -2,6 +2,7 @@
 
 set -eu
 
+echo "hello?"
 echo $GITHUB_TOKEN
 echo $GITHUB_REPOSITORY
 
