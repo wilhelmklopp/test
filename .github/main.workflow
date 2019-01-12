@@ -1,9 +1,9 @@
-workflow "New workflow" {
+workflow "Send a slack message" {
   on = "push"
-  resolves = ["./actions/notify-slack/"]
+  resolves = ["notify-slack"]
 }
 
-action "./actions/notify-slack/" {
+action "notify-slack" {
   uses = "./actions/notify-slack/"
   secrets = ["GITHUB_TOKEN"]
 }
