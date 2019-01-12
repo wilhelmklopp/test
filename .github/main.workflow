@@ -6,5 +6,4 @@ workflow "Send a slack message" {
 action "notify-slack" {
   uses = "./actions/notify-slack/"
   secrets = ["GITHUB_TOKEN"]
-  runs = "entrypoint.sh"
 }
